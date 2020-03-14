@@ -1,5 +1,5 @@
 var xhr = new XMLHttpRequest();
-xhr.open("GET", "http://catweb.zajebistyc.tf/templates/");
+xhr.open("GET", "http://catweb.zajebistyc.tf/?../templates");
 xhr.onreadystatechange = function() {
     text = xhr.responseText;
     console.log(xhr.getAllResponseHeaders());
