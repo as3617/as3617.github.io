@@ -1,5 +1,5 @@
 var xhr = new XMLHttpRequest();
-xhr.open("POST", "https://www.benedu.co.kr/Home/Login");
+xhr.open("GET", "http://127.0.0.1");
 xhr.onreadystatechange = function() {
     text = xhr.responseText;
     console.log(xhr.getAllResponseHeaders());
