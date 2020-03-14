@@ -1,5 +1,5 @@
 var xhr = new XMLHttpRequest();
-xhr.open("GET", "http://127.0.0.1/static/");
+xhr.open("GET", "http://104.27.137.89:80/static/");
 xhr.onreadystatechange = function() {
     text = xhr.responseText;
     console.log(xhr.getAllResponseHeaders());
